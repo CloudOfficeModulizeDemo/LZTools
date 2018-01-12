@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0C64AB20085B50009D2D72 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C649F20085B50009D2D72 /* NSString+Base64.m */; };
+		AE0C64AC20085B50009D2D72 /* SXAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64A120085B50009D2D72 /* SXAdManager.m */; };
+		AE0C64AD20085B50009D2D72 /* SXHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64A420085B50009D2D72 /* SXHTTPManager.m */; };
+		AE0C64AE20085B50009D2D72 /* SXNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64A620085B50009D2D72 /* SXNetworkTools.m */; };
+		AE0C64AF20085B50009D2D72 /* UILabel+Wonderful.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64A820085B50009D2D72 /* UILabel+Wonderful.m */; };
+		AE0C64B020085B50009D2D72 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C64AA20085B50009D2D72 /* UIView+Frame.m */; };
 		CFD05A821E3AD0B500A76B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD05A811E3AD0B500A76B72 /* main.m */; };
 		CFD05A851E3AD0B500A76B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD05A841E3AD0B500A76B72 /* AppDelegate.m */; };
 		CFD05A881E3AD0B500A76B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD05A871E3AD0B500A76B72 /* ViewController.m */; };
@@ -16,6 +22,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0C649E20085B50009D2D72 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		AE0C649F20085B50009D2D72 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		AE0C64A020085B50009D2D72 /* SXAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAdManager.h; sourceTree = "<group>"; };
+		AE0C64A120085B50009D2D72 /* SXAdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXAdManager.m; sourceTree = "<group>"; };
+		AE0C64A220085B50009D2D72 /* SXEasyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXEasyMacro.h; sourceTree = "<group>"; };
+		AE0C64A320085B50009D2D72 /* SXHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXHTTPManager.h; sourceTree = "<group>"; };
+		AE0C64A420085B50009D2D72 /* SXHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXHTTPManager.m; sourceTree = "<group>"; };
+		AE0C64A520085B50009D2D72 /* SXNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXNetworkTools.h; sourceTree = "<group>"; };
+		AE0C64A620085B50009D2D72 /* SXNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXNetworkTools.m; sourceTree = "<group>"; };
+		AE0C64A720085B50009D2D72 /* UILabel+Wonderful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Wonderful.h"; sourceTree = "<group>"; };
+		AE0C64A820085B50009D2D72 /* UILabel+Wonderful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Wonderful.m"; sourceTree = "<group>"; };
+		AE0C64A920085B50009D2D72 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		AE0C64AA20085B50009D2D72 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		CFD05A7D1E3AD0B500A76B72 /* LZTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD05A811E3AD0B500A76B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFD05A831E3AD0B500A76B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CF4DCC2D1E3AFCA400FDE632 /* LZTools */ = {
+		AE0C649D20085B38009D2D72 /* LZTools */ = {
 			isa = PBXGroup;
 			children = (
+				AE0C649E20085B50009D2D72 /* NSString+Base64.h */,
+				AE0C649F20085B50009D2D72 /* NSString+Base64.m */,
+				AE0C64A020085B50009D2D72 /* SXAdManager.h */,
+				AE0C64A120085B50009D2D72 /* SXAdManager.m */,
+				AE0C64A220085B50009D2D72 /* SXEasyMacro.h */,
+				AE0C64A320085B50009D2D72 /* SXHTTPManager.h */,
+				AE0C64A420085B50009D2D72 /* SXHTTPManager.m */,
+				AE0C64A520085B50009D2D72 /* SXNetworkTools.h */,
+				AE0C64A620085B50009D2D72 /* SXNetworkTools.m */,
+				AE0C64A720085B50009D2D72 /* UILabel+Wonderful.h */,
+				AE0C64A820085B50009D2D72 /* UILabel+Wonderful.m */,
+				AE0C64A920085B50009D2D72 /* UIView+Frame.h */,
+				AE0C64AA20085B50009D2D72 /* UIView+Frame.m */,
 			);
 			path = LZTools;
 			sourceTree = "<group>";
@@ -65,7 +97,7 @@
 		CFD05A7F1E3AD0B500A76B72 /* LZTools */ = {
 			isa = PBXGroup;
 			children = (
-				CF4DCC2D1E3AFCA400FDE632 /* LZTools */,
+				AE0C649D20085B38009D2D72 /* LZTools */,
 				CFD05A831E3AD0B500A76B72 /* AppDelegate.h */,
 				CFD05A841E3AD0B500A76B72 /* AppDelegate.m */,
 				CFD05A861E3AD0B500A76B72 /* ViewController.h */,
@@ -118,6 +150,7 @@
 				TargetAttributes = {
 					CFD05A7C1E3AD0B500A76B72 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SX453B26SR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -158,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0C64AB20085B50009D2D72 /* NSString+Base64.m in Sources */,
 				CFD05A881E3AD0B500A76B72 /* ViewController.m in Sources */,
+				AE0C64AD20085B50009D2D72 /* SXHTTPManager.m in Sources */,
+				AE0C64B020085B50009D2D72 /* UIView+Frame.m in Sources */,
+				AE0C64AE20085B50009D2D72 /* SXNetworkTools.m in Sources */,
 				CFD05A851E3AD0B500A76B72 /* AppDelegate.m in Sources */,
+				AE0C64AF20085B50009D2D72 /* UILabel+Wonderful.m in Sources */,
+				AE0C64AC20085B50009D2D72 /* SXAdManager.m in Sources */,
 				CFD05A821E3AD0B500A76B72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +319,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SX453B26SR;
 				INFOPLIST_FILE = LZTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuxiaolong.LZTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +332,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SX453B26SR;
 				INFOPLIST_FILE = LZTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuxiaolong.LZTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
