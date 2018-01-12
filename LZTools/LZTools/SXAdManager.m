@@ -7,7 +7,7 @@
 //
 
 #import "SXAdManager.h"
-#import "SXNetworkTools.h"
+#import <HLAPIRequest.h>
 
 #define kCachedCurrentImage ([[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingString:@"/adcurrent.png"])
 #define kCachedNewImage     ([[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingString:@"/adnew.png"])
@@ -52,13 +52,15 @@
     NSInteger now = [[[NSDate alloc] init] timeIntervalSince1970];
     NSString *path = [NSString stringWithFormat:@"http://g1.163.com/madr?app=7A16FBB6&platform=ios&category=startup&location=1&timestamp=%ld",(long)now];
     
-    [[[SXNetworkTools sharedNetworkToolsWithoutBaseUrl]GET:path parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary* responseObject) {
-        
-        NSArray *adArray = [responseObject valueForKey:@"ads"];
+    [[HLAPIRequest request]
+     .enableDefaultParams(NO)
+     .setCustomURL(path)
+     .success(^(id response){
+        NSArray *adArray = [response valueForKey:@"ads"];
         NSString *imgUrl = adArray[0][@"res_url"][0];
         NSString *imgUrl2 = nil;
         if (adArray.count >1) {
-             imgUrl2= adArray[1][@"res_url"][0];
+            imgUrl2= adArray[1][@"res_url"][0];
         }
         
         BOOL one = [[NSUserDefaults standardUserDefaults]boolForKey:@"one"];
@@ -73,10 +75,7 @@
         }else{
             [self downloadImage:imgUrl];
         }
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
-    }] resume];
+    }) start];
 }
 
 @end
