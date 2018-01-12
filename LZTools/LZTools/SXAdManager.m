@@ -7,7 +7,7 @@
 //
 
 #import "SXAdManager.h"
-#import <HLAPIRequest.h>
+#import <HLNetworking/HLNetworking.h>
 
 #define kCachedCurrentImage ([[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingString:@"/adcurrent.png"])
 #define kCachedNewImage     ([[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingString:@"/adnew.png"])
