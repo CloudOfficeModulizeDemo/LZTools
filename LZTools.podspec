@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "git@github.com:CloudOfficeModulizeDemo/LZTools.git", :tag => s.version.to_s }
 
-  s.source_files  = "LZTools/LZTools/**/*.{h,m}"
+  s.source_files  = "LZTools/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
